@@ -40,7 +40,7 @@ const page = () => {
           </section>
         </div>
       </div> */}
-      <AppMenu />
+      {/* <AppMenu /> */}
     </AppLayout>
   );
 };
