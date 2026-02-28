@@ -32,29 +32,6 @@ const Footer = () => {
     filterCustomersByEmail(wc_customer2_info, email);
   const firstName = wc_customer_info?.first_name;
 
-  const footerCardData = [
-    {
-      icon: <FiBox className="text-3xl text-primary-100" />,
-      name: "Product Packing",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-    },
-    {
-      icon: <FiPhoneCall className="text-3xl text-primary-100" />,
-      name: "24X7 Support",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-    },
-    {
-      icon: <FiTruck className="text-3xl text-primary-100" />,
-      name: "Delivery in 5 Days",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-    },
-    {
-      icon: <FiShield className="text-3xl text-primary-100" />,
-      name: "Payment Secure",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-    },
-  ];
-
   const companyLinks = [
     { label: "About Us", href: "/about" },
     { label: "Delivery Information", href: "/terms-of-use?delivery-return" },

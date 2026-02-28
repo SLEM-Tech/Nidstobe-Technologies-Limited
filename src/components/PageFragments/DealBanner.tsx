@@ -91,9 +91,9 @@ const DealBanner = () => {
             </p>
 
             {/* Timer */}
-            <div className="inline-flex items-center gap-2 sm:gap-4 p-3 border border-red-100 rounded-sm bg-white">
+            <div className="inline-flex items-center gap-1 sm:gap-4 p-2 sm:p-3 border border-red-100 rounded-sm bg-white font-mono break-keep">
               {/* Days */}
-              <div className="flex flex-col items-center min-w-[50px]">
+              <div className="flex flex-col items-center min-w-[40px] sm:min-w-[50px]">
                 <span className="text-lg sm:text-xl font-black text-gray-900">
                   {formatNumber(timeLeft.days)}
                 </span>
@@ -104,7 +104,7 @@ const DealBanner = () => {
               <span className="text-gray-300 font-bold mb-3">:</span>
 
               {/* Hours */}
-              <div className="flex flex-col items-center min-w-[50px]">
+              <div className="flex flex-col items-center min-w-[40px] sm:min-w-[50px]">
                 <span className="text-lg sm:text-xl font-black text-gray-900">
                   {formatNumber(timeLeft.hours)}
                 </span>
@@ -115,7 +115,7 @@ const DealBanner = () => {
               <span className="text-gray-300 font-bold mb-3">:</span>
 
               {/* Minutes */}
-              <div className="flex flex-col items-center min-w-[50px]">
+              <div className="flex flex-col items-center min-w-[40px] sm:min-w-[50px]">
                 <span className="text-lg sm:text-xl font-black text-gray-900">
                   {formatNumber(timeLeft.minutes)}
                 </span>
@@ -126,7 +126,7 @@ const DealBanner = () => {
               <span className="text-gray-300 font-bold mb-3">:</span>
 
               {/* Seconds */}
-              <div className="flex flex-col items-center min-w-[50px]">
+              <div className="flex flex-col items-center min-w-[40px] sm:min-w-[50px]">
                 <span className="text-lg sm:text-xl font-black text-gray-900">
                   {formatNumber(timeLeft.seconds)}
                 </span>

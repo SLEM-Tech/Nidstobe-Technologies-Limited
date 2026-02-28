@@ -303,9 +303,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Accent line */}
-        <div className="hidden slg:block h-[3px] bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400" />
-
         {/* Mobile Header (Hidden on Laptop) */}
         <div className="slg:hidden flex flex-col w-full px-4 py-3 gap-3 bg-white border-b border-gray-100">
           <div className="flex items-center justify-between">

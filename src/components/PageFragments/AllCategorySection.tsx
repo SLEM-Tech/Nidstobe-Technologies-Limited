@@ -275,8 +275,8 @@ const AllCategorySection = () => {
           </p>
         </div>
 
-        {/* Product Grid - 5 columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 xl:gap-8">
+        {/* Product Grid - 2 to 5 columns */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 xl:gap-8">
           {latestProducts.length > 0 ?
             latestProducts.slice(0, 10).map((product: ProductType) => {
               const price = parseInt(product?.price || "0");
@@ -367,7 +367,7 @@ const AllCategorySection = () => {
                         : "N/A"}
                       </span>
                       {oldPrice && oldPrice > price && (
-                        <span className="text-xs text-gray-400 line-through font-semibold decoration-gray-300">
+                        <span className="text-xs text-gray-400 hidden sm:block line-through font-semibold decoration-gray-300">
                           <FormatMoney2 value={oldPrice} />
                         </span>
                       )}
@@ -380,7 +380,7 @@ const AllCategorySection = () => {
             Array.from({ length: 5 }).map((_, i) => (
               <div
                 key={i}
-                className="animate-pulse flex flex-col items-center bg-white border border-gray-100 rounded p-4">
+                className="animate-pulse flex flex-col items-center bg-white border border-gray-100 rounded p-4 max-w-[50%] sm:max-w-none">
                 <div className="w-full aspect-square bg-gray-100 rounded mb-6" />
                 <div className="h-3 bg-gray-200 rounded w-1/3 mb-2" />
                 <div className="h-2 bg-gray-200 rounded w-1/2 mb-3" />
