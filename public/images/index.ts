@@ -17,7 +17,7 @@ import officeImg1 from "./office-img.png";
 import confetti from "./confetti.png";
 import banner from "./banner.png";
 import heroImage2 from "./heroImage2.png";
-import logoImage from "./tunGlobal-logo.png";
+import logoImage from "./logo (2).png";
 import heroImage3 from "./heroImage3.png";
 import heroImage4 from "./heroImage4.png";
 import heroBg from "./heroBg.png";

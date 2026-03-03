@@ -114,6 +114,7 @@ const Header = () => {
     <>
       <header className="flex flex-col w-full bg-white z-[100] fixed top-0 shadow-sm transition-all">
         {/* Desktop Header */}
+
         <div className="hidden slg:flex flex-col w-full mx-auto">
           {/* Top Tier (Navigation & Contact) */}
           <div className="w-full border-b border-gray-100 bg-[#FAFAFA]">
@@ -158,11 +159,7 @@ const Header = () => {
           <div className="w-full bg-white">
             <div className="max-w-[1440px] px-8 mx-auto flex items-center justify-between py-5 gap-8">
               {/* Left: Logo */}
-              <Link
-                href="/"
-                className="font-black text-3xl tracking-widest text-black uppercase">
-                LOGO
-              </Link>
+              <LogoImage className="w-[40px] sm:w-[40px] lg:w-[50px]" />
 
               {/* Center: Search Bar Component */}
               <div className="flex-1 max-w-2xl flex items-center border border-[#7DCCAE] rounded-md overflow-hidden bg-white h-11 transition-shadow hover:shadow-sm focus-within:shadow-sm focus-within:border-emerald-500">
@@ -312,11 +309,7 @@ const Header = () => {
                 className="p-1 border border-gray-200 rounded text-gray-700 bg-gray-50">
                 <FiMenu className="text-xl" />
               </button>
-              <Link
-                href="/"
-                className="font-black text-xl tracking-widest text-black uppercase">
-                LOGO
-              </Link>
+              <LogoImage className="w-[40px] sm:w-[40px] lg:w-[50px]" />
             </div>
 
             <div className="flex items-center gap-4">
